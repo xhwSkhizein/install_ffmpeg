@@ -32,7 +32,7 @@ retryWhenFail(){
 
 # 检查参数是否提供工作目录
 if [ $# -lt 1 ] ; then
-    failWarning "\n $Red Usage: $0 [path_for_download_file] $ColorReset \n";
+    failWarning "$Red Usage: $0 [path_for_download_file] $ColorReset";
     exit 1;
 fi
 
@@ -45,8 +45,8 @@ greenNotice "安装依赖..."
 retryWhenFail `yum install autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git libtool make mercurial pkgconfig zlib-devel`
 
 
-# echo "\n"
-# greenNotice "\n Install NASM-2.13.02 ? [y/n]"
+# echo ""
+# greenNotice " Install NASM-2.13.02 ? [y/n]"
 # read input
 # if [ $input = 'y' ] ; then
 #     cd $WORK_DIR
@@ -61,8 +61,7 @@ retryWhenFail `yum install autoconf automake bzip2 cmake freetype-devel gcc gcc-
 #     greenNotice "Install NASM-2.13.02, Done!"
 # fi
 
-echo "\n"
-greenNotice "\nInstall Ysam-1.3.0 ? [y/n]"
+greenNotice "Install Ysam-1.3.0 ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -75,8 +74,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install Ysam-1.3.0, Done!"
 fi 
 
-echo "\n"
-greenNotice "\nInstall libx264 ? [y/n]"
+greenNotice "Install libx264 ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -88,8 +86,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install libx264, Done!"
 fi
 
-echo "\n"
-greenNotice "\nInstall libx265 ? [y/n]"
+greenNotice "Install libx265 ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -101,8 +98,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install libx265, Done!"
 fi
 
-echo "\n"
-greenNotice "\nInstall libfdk_aac ? [y/n]"
+greenNotice "Install libfdk_aac ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -115,8 +111,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install libfdk_aac, Done!"
 fi
 
-echo "\n"
-greenNotice "\nInstall libmp3lame ? [y/n]"
+greenNotice "Install libmp3lame ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -129,8 +124,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install libmp3lame, Done!"
 fi  
 
-echo "\n"
-greenNotice "\nInstall libopus ? [y/n]"
+greenNotice "Install libopus ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -143,8 +137,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install libopus, Done!"
 fi
 
-echo "\n"
-greenNotice "\nInstall libogg ? [y/n]"
+greenNotice "Install libogg ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -157,8 +150,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install libogg, Done!"
 fi
 
-echo "\n"
-greenNotice "\nInstall libvorbis ? [y/n]"
+greenNotice "Install libvorbis ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
@@ -171,8 +163,7 @@ if [ $input = 'y' ] ; then
     greenNotice "Install libvorbis, Done!"
 fi
 
-echo "\n"
-greenNotice "\nInstall libvpx ? [y/n]"
+greenNotice "Install libvpx ? [y/n]"
 read input
 if [ $input = 'y' ] ; then
     cd $WORK_DIR
